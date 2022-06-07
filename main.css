@@ -2,8 +2,8 @@
   --pri-color:       #991212;
   --pri-color-light: #dd4e4e;
   --sec-color:       #550202;
-  --mywhite:           rgb(223, 223, 223);
-  --myblack:           rgb(0, 0, 0);
+  --mywhite:         #fff;
+  --myblack:         rgb(0, 0, 0);
 }
 
 * {
