@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="posts.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="test.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--SIDEBAR START-->
+    
+    <div class="main-sidebar"  id="main-sidebar">
+        <div class="close-sidebar-button"
+            onclick="w3_close()">&times;
+        </div>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <script>
+        function w3_open() {
+        document.getElementById("main-sidebar").style.display = "block";
+        }
+
+        function w3_close() {
+        document.getElementById("main-sidebar").style.display = "none";
+        }
+    </script>
+
+    <!--SIDEBAR END-->
+
+    <!--NAVBAR START-->
+    <nav class='main-nav'>
+        <h1 class='hidden'>Mu Brasil</h1>
+        <button class='menu-button' onclick="w3_open()">
+            <img  src='./img/icons/menu.png'></img>
+        </button>
+            
+        <img class='mu-logo' src='./img/mu_origin_logo.png'></img>
+        <div class='main-nav__div'>
+            <ul class='main-nav__items'>
+                
+                <li class='main-nav__item'>
+                    <a href='#'>Painel de Controle</a>
+                </li>
+                
+                <li class='main-nav__item'>
+                    <a href='#'>Mini APK</a>
+                </li>
+                <li class='main-nav__item full-apk'>
+                    <a href='#'>Full APK</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--NAVBAR END-->
+
+    <!--HEADER START-->
+    <div style='background-image: url(./img/banner-desktop3.png);': class='header-image'></div>
+    <div>
+        <h1 class='banner-title'>Bem Vindo(a) ao Mu Brasil!</h1>
+    </div>
+    <!--HEADER END-->
+    
+
+
+    <!--CONTENT START-->
+    <div class='posts'>
+            
+        <!--Detalhes do servidor-->
+        <section id="detalhes-servidor">
+            <h1 class="section-title">Detalhes do servidor</h1>
+            <ul class="key-features__list">
+                
+                <li class="key-feature">
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">Versao 8.3 | 5 Anos Oline</p>
+                </li>
+                
+                <li class="key-feature">
+                    <div class="key-feature__image" id="experience">
+
+                    </div>
+                    <p class="key-feature__description">Experiência: Média</p>
+                </li>
+                
+                <li class="key-feature">
+                    <div class="key-feature__image">
+                        
+                    </div>
+                    <p class="key-feature__description">Máx Nível: 18RB 100LV</p>
+                </li>
+                
+                <li class="key-feature">
+                    <div class="key-feature__image">
+                        
+                    </div>
+                    <p class="key-feature__description">NoPayToWin</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <div class="clearfix"></div><!--div para debugar a sobreposicao de divs-->
+        
+        <!--Ganhe ao criar personagem-->
+        <section id="criar-personagem">
+            
+            <h1 class="section-title">Ganhe ao Criar Personagem!</h1>
+
+                <ul class="key-features__list">
+                    <li class="feature">
+                        <div class="key-feature__image" id="npc"></div>
+                        <p class="key-feature__description"></p>
+                    </li>
+                    <li class="feature">
+                        <div class="key-feature__image" id="chest"></div>
+                        <p class="key-feature__description">Roleta Epic Chest Grátis A Cada 30 min</p>
+                    </li>
+                    <li class="feature">
+                        <div class="key-feature__image" id="gold"></div>
+                        <p class="key-feature__description">50KK Ouro</p>
+                    </li>
+                </ul>    
+
+        </section>
+        
+        <div class="clearfix"></div><!--div para debugar a sobreposicao de divs-->
+
+        <!--Premios, beneficios etc-->
+        <section id="beneficios">
+            <h1 class="section-title">Beneficios?</h1>
+            
+            <ul class="key-features__list">
+                
+                <li id="aa" class="key-feature">
+                    <div class="card">
+                        <h2 class="key-feature__description">Roleta Epic Chest Grátis a 30min</h2>
+                        <div class="key-feature__image" id="epicchest"></div>
+                    </div>
+                </li>
+
+                <li class="key-feature">
+                    <div class="card">
+                        <h2 class="key-feature__description">Roleta Montaria Grátis a 1Hrs</h2>
+                        <div class="key-feature__image" id="horse"></div>
+                    </div>
+                </li>
+
+                <li class="key-feature">
+                    <div class="card">
+                        <h2 class="key-feature__description">Roleta Pet Grátis a 1h e 30min</h2>
+                        <div class="key-feature__image" id="pet"></div>
+                    </div>
+                </li>
+                
+                <li class="key-feature">
+                    <div class="card">
+                        <h2 class="key-feature__description">Roda da Sorte Grátis a 1h</h2>
+                        <div class="key-feature__image" id="pet"></div>
+                    </div>
+                </li>
+
+                <li class="key-feature">
+                    <div class="card">
+                        <h2 class="key-feature__description">Drop Parte de Estrela da Roleta</h2>
+                        <div class="key-feature__image" id="pet"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+        
+    </div>
+    <!--CONTENT END-->
+
+
+
+    <!--FOOTER START-->
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul class="footer-list">
+                <h2>O Jogo</h2>
+               <li>
+                   <a href="">Baixar o jogo</a>
+                </li> 
+            </ul>
+            
+            <ul class="footer-list"> 
+               <h2>Minha Conta</h2>
+               <li>
+                    <a href="">Painel de Controle</a>
+                </li>
+               <li>
+                   <a href="">Shop Mu Brasil</a>
+                </li> 
+               <li>
+                   <a href="">Fazer Recarga</a>
+                </li> 
+            </ul>
+            
+            <ul class="footer-list">
+                <h2>Suporte</h2>
+                <li>
+                    <a href="">Recuperar Senha</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <h2>Redes Sociais</h2>
+                <li>
+                    <a href="" class="social-media">
+                        <img src="/img/icons/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="social-media" href="">
+                        <img src="/img/icons/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="social-media" href="">
+                        <img src="img/icons/youtube.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!--FOOTER END-->
+
+</body>
+</html>

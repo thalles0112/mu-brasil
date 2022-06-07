@@ -1,0 +1,25 @@
+@keyframes right-slide {
+    0%   {left:-200px}
+    100% {left:0px}
+    0% {left:-200px}
+  }
+
+
+.main-sidebar{
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    width: 40vh;
+    background-color: black;
+    color: white;
+    animation-duration: 1s;
+    animation-name: right-slide;
+}
+
+.close-sidebar-button{
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    padding: 10px;
+}
